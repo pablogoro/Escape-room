@@ -29,50 +29,133 @@
     width: 11.111111%;
     float: left;    
 }
-
-
-
-
-// BIENVENIDA ------------------------------------------------------------------------
-
-
-// fondo de pantalla
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') repeat scroll 0 0 rgba(0, 0, 0 , 0);
-#index{
-  
-
-    body {
-        background: #000;
-    }
-        
-      h2 {
-        font-size: 5.6rem;
-        font-family: 'Lobster', cursive;
-      }
-      
-      .fondo {
-        background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
-        color: #eee;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        perspective: 1000px;
-        perspective-origin: 50% 50%;
-        animation: animation 100s linear infinite;
-      }
-      
-      @keyframes animation {
-         100%{
-          background-position:0px -3000px;
-        }
-      }
-    #tittle{
-      padding: 20%;
-    }
-    
+.column5{
+  width: 20%;
+  float: left;
+}
+.column6{
+  width: 77.77777%;
+  float: left;  
 }
 
-// Pantalla 1
 
+
+// BIENVENIDA 
+#index{
+  h1, h3, form{
+    text-align: center;
+  } 
+  h1{
+    font-size: 80px;
+    font-family: 'Lobster', cursive;
+    
+  }
+  
+  
+  h4{
+    text-align: center;
+    padding-top: 2%;
+
+  }
+  .i-enviar{
+    font-size: 25px;
+    text-align: center;
+    background-color: aquamarine;
+
+    height: 45px;
+    width: 160px;
+    font-family: 'Lobster', cursive;
+  }
+  
+  
+  
+}
+// Pantalla 1
+#Pantalla1 {
+  .textos {
+    text-align: center; 
+    text-align: justify; 
+    font-size: 17px;
+  }
+
+  .textos2 {
+    padding-left: 2%;
+  }
+
+  .textos3 {
+    padding-right: 2%;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-family: 'Lobster';
+    font-size: 70px;
+    
+  }
+  .column4{
+    text-align: left;
+    
+   
+  }
+
+  
+  h3 {
+    color:black;
+    text-align: center;
+    padding-bottom: 4%;
+    
+    font-family: 'Lobster', cursive;
+
+  }
+
+  h4 {
+    text-align: center;
+    padding-top: 2%;
+    
+  }
+
+  form {
+    padding: 3%;
+    text-align: center;
+    
+  }
+  b {
+    font-size: 19px;
+  }
+}
+// Pantalla 2
+#pantalla2{
+  p,form,h1{
+  
+    text-align: center;
+  }
+  h1{
+    padding-top: 10%;
+  }
+}
+
+// pantalla 3
+#pantalla3{
+  .item{
+    background-color: tomato;
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+    transition: background-color, width, 2s;
+  
+  }
+  .activador{
+    background-color: aquamarine;
+    width: 200px;
+    color: red;
+  }
+
+  .container:hover .item{
+    background-color: aquamarine;
+    width: 100px;
+    transition: background-color, width, 2s;
+
+  }
+}
