@@ -1,0 +1,812 @@
+* {
+  box-sizing: border-box;
+  /*inhabilita el padding para evitar el descuadre del layaout*/
+}
+
+// tablas
+.row::after{
+    content: "";
+    display: table;
+    clear: both;        
+}
+
+.column1 {
+    width: 100%;
+    float: left;    
+}
+
+.column2 {
+    width: 50%;
+    float: left;    
+}
+
+.column3 {
+    width: 33.333333%;
+    float: left;    
+}
+
+.column4 {
+    width: 11.111111%;
+    float: left;    
+}
+.column5{
+  width: 20%;
+  float: left;
+}
+.column6{
+  width: 77.77777%;
+  float: left;  
+}
+.columnImg{
+  width: 10%;
+  float: left;
+}
+.colmnImg2{
+  width:25%;
+  float: left;
+}
+
+
+// BIENVENIDA 
+#index{
+  margin: 0;
+  padding: 0;
+
+  section{
+    width: 100%;
+			height: 100vh;
+			color: #fff;
+			background: linear-gradient(100deg,#02111B, #30292F);
+			background-size: 200% 200%;
+			position: relative;   
+			animation: cambiar 10s ease-in-out infinite;
+  }
+  @keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+  }
+  h1,form{
+    text-align: center;
+  }
+  
+  h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding: 1%;
+    border: solid 3px #FCFCFC;
+    border-radius: 25px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    font-family: 'Dancing Script', cursive;
+    color: #FCFCFC;
+  }
+
+  input{
+    background-color: #3F4045;
+    color: #5D737E;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: monospace;
+    position: absolute;
+    font-size: 20px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  h3{
+    position: absolute;
+    color: #FCFCFC;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');  
+    font-family: 'BhuTuka Expanded One', cursive;
+  }
+  
+}
+// Pantalla 1
+
+#Pantalla1{
+  * {
+   margin: 0;
+   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+      
+}
+  background-color: #02111B;
+
+  #particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    
+  }
+.nav {
+  width: 800px;
+  max-width: 90%;
+  margin: 30px auto;
+  
+}
+
+.stextos {
+
+  list-style: none;
+  display: flex;
+  background-color: #3F4045;
+  
+  li{
+      width: 30%;
+      a{
+          text-decoration: none;
+          font-size: 16px;
+          display: block;
+          padding: 20px 0;
+          text-align: center;
+          color: black;
+          @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+          font-family: 'Bodoni Moda', serif;
+      }
+  }
+}
+.secciones{
+  h1{
+      text-align: center;
+      padding-bottom: 5%;
+  }
+  width: 100%;
+  background-color: #5D737E;
+  height: 50vh;
+}
+article{
+  padding: 30px;
+  p{
+      text-align: justify;
+      font-size: 20px;
+  }
+  
+}
+form{
+  input{
+    margin-bottom: 2%;
+  }
+  p{
+    color: #FCFCFC;
+    left: -2%;
+    position: absolute;
+    
+  }
+  margin-top: 5%;
+  left: 45%;
+  position: absolute;
+  
+}
+
+@media (max-width: 700px){
+  li{
+      width: none;
+      flex-basis: 0;
+      flex-grow: 1;
+  }
+}
+
+@media (max-width: 450px){
+  a{
+   padding: 15px;   
+  }
+}
+}
+// Pantalla 2
+#pantalla2{
+  @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+    font-family: 'Cardo', serif;
+    background-color: #02111B;
+    font-size: 20px;
+  header{
+    background-color: #30292F;
+    margin-left: 15%;
+    width: 70%;
+    top: 20%;
+    transform: 50%,50%;
+    border-radius: 25px;
+    border: solid;
+    border-color: #3F4045;
+    box-shadow: 25px 25px 12px  5px;
+    position: absolute;
+    z-index: 99;  
+ 
+  }
+  p,form,h1{
+  
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  p,h1{
+    color: #FCFCFC;
+  }
+ input{
+    background-color: #3F4045;
+    color: #FCFCFC;
+    
+ }
+ #particles-js{
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   
+   z-index: -1;
+   
+ }
+}
+
+// pantalla 3
+#pantalla3{
+  
+  background-color: #02111B;
+  h1{
+    text-align: center;
+    color: #FCFCFC;
+    padding-bottom: 5%;
+  }
+  *{
+    padding-left: 1%;
+  }
+ body{
+   background-color: #02111B;
+ }
+.container1, .container2{
+
+  width: 600px;
+  height: 200px;
+}
+form{
+  margin-left: 40%;
+}
+h3{
+  padding-left: 45%;
+  color: #FCFCFC;
+}
+
+// items
+
+.item{
+  background-color: #3F4045;
+    width: 600px;
+    height: 200px;
+    margin: 20px;
+    
+
+}
+ .item1{
+   .item;
+    transition-property: background-color, width; // a que propiedades le va a afectar la transición
+    transition-duration:0.5s ; //tiempo de duracion de la transacción
+    transition-timing-function:ease; //define la accelaración de la transición  |ease | ease-in | ease-in-out | ease-out | linear
+    transition-delay: 0s; 
+    p{
+      color: #3F4045;
+      padding-left: 20px;
+    }
+}
+.item2{
+  .item;
+  transition-property: background-color, width; // a que propiedades le va a afectar la transición
+  transition-duration:20s ; //tiempo de duracion de la transacción
+  transition-timing-function:linear; //define la accelaración de la transición  |ease | ease-in | ease-in-out | ease-out | linear
+  transition-delay: 0s; 
+  p{
+    color: #3F4045;
+    padding-left: 20px;
+  }
+}
+.item3{
+  .item;
+  transition-property: background-color, width; // a que propiedades le va a afectar la transición
+  transition-duration:15s ; //tiempo de duracion de la transacción
+  transition-timing-function:cubic-bezier(0, 1.01, 1,-0.56); //define la accelaración de la transición  |ease | ease-in | ease-in-out | ease-out | linear
+  transition-delay: 0s; 
+  p{
+    color: #3F4045;
+    padding-left: 20px;
+  }
+}
+.item4{
+  .item;
+  transition-property: background-color, width; // a que propiedades le va a afectar la transición
+  transition-duration:0.5s ; //tiempo de duracion de la transacción
+  transition-timing-function:cubic-bezier(0, 1.36, 0.82, 0.26); //define la accelaración de la transición  |ease | ease-in | ease-in-out | ease-out | linear
+  transition-delay: 0s; 
+  p{
+    color: #3F4045;
+    padding-left: 20px;
+  }
+}
+.item5{
+  .item;
+  transition-property: background-color, width; // a que propiedades le va a afectar la transición
+  transition-duration:5s ; //tiempo de duracion de la transacción
+  transition-timing-function:cubic-bezier(0, 2.04, 0.97,-0.92); //define la accelaración de la transición  |ease | ease-in | ease-in-out | ease-out | linear
+  transition-delay: 0s; 
+  p{
+    color: #3F4045;
+    padding-left: 20px;
+  }
+}
+.item6{
+  .item;
+  transition-property: background-color, width; // a que propiedades le va a afectar la transición
+  transition-duration:10s ; //tiempo de duracion de la transacción
+  transition-timing-function:linear; //define la accelaración de la transición  |ease | ease-in | ease-in-out | ease-out | linear
+  transition-delay: 0s; 
+  p{
+    color: #3F4045;
+    padding-left: 20px;
+  }
+}
+
+.item7{
+  .item;
+  transition-property: background-color, width; // a que propiedades le va a afectar la transición
+  transition-duration:1s ; //tiempo de duracion de la transacción
+  transition-timing-function:cubic-bezier(0, 0.88, 1,-0.61); //define la accelaración de la transición  |ease | ease-in | ease-in-out | ease-out | linear
+  transition-delay: 0s; 
+  p{
+    color: #3F4045;
+    padding-left: 20px;
+  }
+}
+.item8{
+  .item;
+  transition-property: background-color, width; // a que propiedades le va a afectar la transición
+  transition-duration:45s ; //tiempo de duracion de la transacción
+  transition-timing-function:cubic-bezier(0.2,-0.26, 0,-0.54); //define la accelaración de la transición  |ease | ease-in | ease-in-out | ease-out | linear
+  transition-delay: 0s; 
+  p{
+    color: #3F4045;
+    padding-left: 20px;
+    
+  }
+}
+
+
+.container1:hover .item1{
+    background-color: #3F4045  ;
+    width: 0px;
+    p{
+      color: #02111B;
+    }
+    
+}
+.container2:hover .item2{
+  background-color: #3F4045  ;
+  width: 0px;
+  p{
+    color:#3F4045;
+  }
+  
+}
+.container3:hover .item3{
+  background-color: #3F4045  ;
+  width: 0px;
+  p{
+    color: toma to;
+  }
+  
+}
+
+.container4:hover .item4{
+  background-color: #3F4045  ;
+  width: 0px;
+  p{
+    color: #02111B;
+  }
+  
+}
+.container5:hover .item5{
+  background-color: #3F4045  ;
+  width: 0px;
+  p{
+    color: #3F4045;
+  }
+  
+}
+.container6:hover .item6{
+  background-color: #3F4045  ;
+  width: 0px;
+  p{
+    color: #3F4045;
+  }
+  
+}
+.container7:hover .item7{
+  background-color: #3F4045  ;
+  width: 0px;
+  p{
+    color: #3F4045;
+  }
+  
+}
+.container8:hover .item8{
+  background-color: #3F4045  ;
+  width: 0px;
+  p{
+    color: #3F4045;
+  }
+  
+}
+@media (max-width: 1280px){
+  .column2{
+    width: 100%;
+  }
+  padding-left: 10%;
+  .item{
+    width: 2000px;
+    margin: 0;
+  }
+}
+}
+// pantalla4
+#pantalla4{
+  h1 {
+    text-align: center;
+    font-family: 'Lobster';
+    font-size: 70px;
+
+  }
+
+  h2{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    
+
+  }
+
+  .TextoEjemplo{
+    padding-top: 2%;
+    padding-bottom: 0%;
+  }
+
+  #Ajedrez {
+    text-align: center;
+
+
+  }
+
+  form {
+    padding: 3%;
+    text-align: center;
+
+  }
+
+  #Explicacion{
+
+    color:black;
+    text-align: center;
+
+    font-family: 'Lobster', cursive;
+
+  }
+  #Img_Jugada{
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 80%;
+
+  }
+
+  #piezas{
+    background-size: cover;
+    background-position: center;
+    width: 21vw;
+    height: 17vh;
+  }
+  #Nombre_Piezas{
+    text-align: left;
+    padding-left: 8%;
+  }
+
+  #Ejemplo {
+    color: rgb(138, 131, 70);
+  }
+
+  .column1{
+   text-align: center;
+
+  }
+
+  .column7{
+    width: 25%;
+    float: left; 
+    text-align: center;
+    padding-bottom: 2%;
+  }
+
+  .column8{
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding-top: 1%;
+  }
+  .column9{
+    width: 10%;
+    float: left;
+    text-align: center;
+    padding-bottom: 2%;
+
+  }
+  #particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    
+  }
+  @media only  screen and (max-width: 1200px){
+
+    .column1{
+      width: 100%;
+    }
+
+    .column8{
+      width: 100%;
+    }
+
+    .column7{
+      width: 100%;
+
+    }
+    #piezas{
+      width: 100%;
+    }
+    #Nombre_Piezas{
+      width: 100%;
+    }
+
+
+
+
+
+  }
+
+}
+// pantalla 5
+#pantalla5{
+  background-color: #02111B;
+  color: #02111B;
+  img{
+    max-width: 60%;
+    max-height: 50%;
+    
+  }
+  .img1{
+    max-width: 150px;
+    max-height: 150px;
+    top: 10%;
+    left: 13%;
+    transform: 50%,50%;
+    position: absolute;
+    
+  }
+  #colores{
+    width: 100%;
+    height: 90vh;
+  }
+  
+  .candado{
+    background-color: #30292F;
+    border-radius: 15px;
+    box-shadow: black 15px 15px;
+    border-color: #5D737E;
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 45%;
+    transform: 50%,50%;
+    position: absolute;
+    z-index: 99;
+  }
+  .llaves{
+    background-color: #5D737E;
+    width: 1000px;
+    height: 100px;
+    top: 50%;
+    left: 20%;
+    transform: 50%,50%;
+    position: absolute;
+    border-radius: 450px;
+    border-color: #02111B;
+    box-shadow: black 15px 15px;
+    z-index: 99;
+
+  }
+  .llave1{
+    top: 2%;
+    left: 20%;
+    transform: 50%,50%;
+    position: absolute;
+  }
+  .llave2{
+    top: 2%;
+    left: 35%;
+    transform: 50%,50%;
+    position: absolute;
+ 
+  }
+  .llave3{
+    top: 2%;
+    left: 50%;
+    transform: 50%,50%;
+    position: absolute;
+  }
+  .llave4{
+    top: 2%;
+    left: 65%;
+    transform: 50%,50%;
+    position: absolute;
+  }
+  .llave5{
+    top: 2%;
+    left: 80%;
+    transform: 50%,50%;
+    position: absolute;
+  }
+  #particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    
+    z-index: -1;
+    
+  }
+  @media(max-width:1200px){
+  .llaves{
+    height: 200px;
+    width: 600px;
+  }
+  .llave1{
+    top: 2%;
+    left: 30%;
+    transform: 50%,50%;
+    position: absolute;
+  }
+  .llave2{
+    top: 2%;
+    left: 40%;
+    transform: 50%,50%;
+    position: absolute;
+ 
+  }
+  .llave3{
+    top: 2%;
+    left: 50%;
+    transform: 50%,50%;
+    position: absolute;
+  }
+  .llave4{
+    top: 50%;
+    left: 30%;
+    transform: 50%,50%;
+    position: absolute;
+  }
+  .llave5{
+    top: 50%;
+    left: 45%;
+    transform: 50%,50%;
+    position: absolute;
+  }
+
+  
+ @media (max-width:800px){
+  .llaves{
+    height: 200px;
+    width: 500px;
+  }
+ 
+ }
+  }
+}  
+
+
+// Pantalla 6
+#pantalla6{
+ #particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    
+  }
+  background-color: #02111B;
+
+
+  h1 {
+    text-align: center;
+    font-family: 'Lobster';
+    font-size: 70px;
+    color: white;
+
+  }
+
+  h3 {
+    text-align: center;
+    font-family: 'Lobster';
+    font-size: 20px;
+    color: white;
+  }
+
+  .tablero {
+    background-position: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+ 
+
+  }
+
+  .column1{
+    text-align: center; 
+    
+  }
+  .respuestas{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: center; 
+
+  }
+ 
+
+}
+
+#pantallafinal{
+    margin: 0;
+    padding: 0;
+  
+    section{
+      width: 100%;
+        height: 100vh;
+        color: #fff;
+        background: linear-gradient(100deg,#02111B, #30292F);
+        background-size: 200% 200%;
+        position: relative;   
+        animation: cambiar 10s ease-in-out infinite;
+    }
+    @keyframes cambiar{
+      0%{background-position: 0 50%;}
+      50%{background-position: 100% 50%;}
+      100%{background-position: 0 50%;}
+    }
+    
+    h1{
+      font-size: 50px;
+      letter-spacing: 2px;
+      padding: 1%;
+      border: solid 3px #FCFCFC;
+      border-radius: 25px;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+      font-family: 'Dancing Script', cursive;
+      color: #FCFCFC;
+    }
+    
+    h3{
+      position: absolute;
+      color: #FCFCFC;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');  
+      font-family: 'BhuTuka Expanded One', cursive;
+    }
+}
+    
+  
