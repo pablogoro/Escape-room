@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body id="Pantalla1">
-<div class="paricles-js"></div>
+
 
 <div class="nav">
+<H1>Palabras Ocultas</H1>
 
+<p class="instrucciones">Encuentra el mensaje oculto de los siguientes textos
+</p>
 <ul class="stextos">
     <li><a href="#a1">Texto1</a></li>
     <li><a href="#a2">Texto2</a></li>
@@ -73,7 +76,6 @@
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./menu.js"></script>
-    <script src="../descargas/particulas.js/particles.js-master/particles.js"></script>
-    <script src="../descargas/particulas.js/default.js"></script>
+ 
 </body>
 </html>

@@ -31,7 +31,7 @@
 
 <section class="row">
     <div class="column9"></div>
-    <div class="column1"><h3 id="Explicacion">Jugando tanto con las blancas como las negras, averigua las 5 jugadas a hacer en total para que las negras ganen la partida. </h3></div>
+    <div class="column1"><h3 id="Explicacion">Jugando tanto con las blancas como las negras, averigua las 5 jugadas a hacer en total para que las negras ganen la partida. (EMPIEZAN NEGRAS)</h3></div>
     <div class="column9"></div>
 </section>
 <section class="row">
@@ -87,7 +87,7 @@
     </form>
  <?php 
         if (isset($_POST["ficha"]) && ($_POST["ficha"]!=$ficha[$jugada]) && ($_POST["casilla"]!=$casilla[$jugada])){
-            echo $fallo;
+            echo "<p style = 'color: white;'>$fallo</p>";
         }
         ?>
  
